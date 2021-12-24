@@ -1,0 +1,34 @@
+
+This is an open ended lab. You task is to implement something similar to a Python list. That is to say a container that can store elements of different data types. You should call your container Stash and implement it in a file called Stash.h, in a folder named appropriately.
+
+Your Stash should support int, char, and Stash (you should be able to store stashes inside a stash). Here is a driver program that should function function if you implement a Stash corectly.
+
+  #include <iostream>
+  #include "Stash.h"
+
+  using namespace std;
+
+  int main(){
+      Stash s;
+      Stash temp;
+      temp.append(11);
+      temp.append(12);
+
+      s.append(5);
+      s.append(7);
+      s.append('A');
+      s.append(temp);
+
+      cout << temp << endl;
+      cout << s << endl;
+  }
+  
+There are different ways to implement such a container. You are likely to need a place on the heap to store the data, as well as a list keeping track of what data type is stored in each location.
+
+The driver program above assumes a general implementation. This is to say that you can append whatever data type you want, at whatever position you want, and you can have as many elements as you want.
+
+You may implement a simpler version of this container for partial credit. For example, it would be easier if we knew ahead of time that it can only hold a fixed number of elements, perhaps even a fixed number of each type, for example, 2 integers, 2 chars and two floats. You can also omit the support for storing stashes inside stashes.
+
+Make sure you have a correctly working copy constructor.
+
+Create another file named design.txt and explain in detail how your data structure works. If you have implemented a simplified version, also state what aspects you are implementing and what aspects you are omitting.
