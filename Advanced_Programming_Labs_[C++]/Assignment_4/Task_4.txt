@@ -1,0 +1,105 @@
+Create a folder called assignment_4 in your home directory. Inside this folder you should have a file named lab4.h and you should create all the required functions in it. There is also a driver program in driver.cpp provided at the end of this listing. You can use it to test your code.
+
+Exercises
+1. Simple Combination Lock
+
+Suppose we have one of those combination locks that you commonly find in high schools, or airport luggage. Suppose also that the lock has 3 dials, with numbers from 1 to 9 (inclusive). Our lock has no 0s. Your task is to write a function that takes in the combination that the lock is currently set to, and the combination that unlocks it. It should return the smallest number of operations needed to unlock the lock.
+
+For example, suppose the unlock combination is 1 1 1, and the lock is currently at 1 1 2, then the function should return 1, because there is only 1 operation needed, namely to change the last dial from a 2 to a 1, which is 1 operation. If the lock had been set to 1 1 3, then it would have required 2 operations to unlock it, because we need to move the last dial twice. Lastly, if the lock was set to 2 2 2, then the answer is 3, because we move each one of the 3 dials once.
+
+Your function signature should be:
+
+  int simple_lock(int x1, int x2, int x3, int y1, int y2, int y3)
+  
+where x1, x2, and x3 represent the current combination and the y-values represent the unlock combination.
+
+Remember that dials can rotate in either direction.
+
+2. More General Lock
+Here we wish to solve the same problem as the previous exercise, namely, given two combinations, find the minumum number of operations needed to go from one to the other.
+
+The lock we will be using here has a variable number of dials, but each dial has numbers from 1 to 9 (again, no zeros).
+
+This time the combinations will be represented by 1 integer each. You may assume only valid combinations will be given to your function. That is both integer inputs will have the same number of digits, and they will all be between 1 and 9.
+
+Your signatre should be:
+
+  int combo_lock(int current, int unlock)
+  
+3. Perfect Numbers
+Perfect numbers are positive integers which are equal to the sum of their proper divisors (positive divisors excluding itself). For example, the number 6 is a perfect number because its proper divisors are 1, 2, and 3, and 6 = 1 + 2 + 3, so it is equal to the sum of its proper divisors, which makes it perfect.
+
+Your task is to write a function that takes in an integer and returns true if the integer is perfect, and false otherwise.
+
+The function signature should be:
+
+  bool is_perfect(int n)
+  
+4. The Next Perfect Number
+
+Write a function that will take in an integer input and return the first perfect number that is strictly greater than the input value.
+
+The signature should be:
+
+  int next_perfect(int n)
+  
+5. Prime Numbers
+
+A prime number is a positive integer that has exectly two factors, no more, no less. Write a function that takes in an integer and returns true if the integer is prime, and false otherwise.
+
+The signature should be:
+
+  bool is_prime(int x)
+  
+6. The Next Prime Number
+
+Write a function that takes in an integer input and returns the first prime number larger than the input value.
+
+The signature should be:
+
+  int next_prime(int n)
+  
+7. Powers
+
+Write a function that will take in two integers, a value and a base, and return true if the value is a power of the given base.
+
+The signature should be:
+
+  bool is_power(int number, int base)
+  
+8. Coprime Numbers
+
+Two integers are called coprime if their greatest common divisor (GCD) is 1. In the placeholder header file below, there is a complete implementation of Euclid's Algorithm for finding the GCD of two integers. You may use it in this question.
+
+Write a function that will take in two integers and return true if they are coprime, and false otherwise.
+
+The signature should be as follows:
+
+  bool coprime(int x, int y)
+
+9. Euler's Totient Function
+
+Euler's Totient function, typically denoted as $\varphi(n)$ returns the number of integers that are coprime to $n$. Your task is to implement this function.
+
+The signature should be:
+
+  int phi(int n)
+  
+10. Approximating Square Roots
+
+The divide-and-average algorithm for computing the square root of any positive number $a$ works as follows:
+
+  Start with any positive number $x$ as an approximation of the square root
+
+  Refine the approximation by taking the average of $x$ and $\frac{a}{x}$, and setting $x$ to that
+
+  Repeat the above refinement step until the values of $x$ and $\frac{a}{x}$ differ by a less than some small $\epsilon$ value.
+
+Write a function that takes in a value for $a$, $x$, and $\epsilon$, and returns the approximation for $\sqrt{a}$ according to the above algorithm.
+
+The function signature should be:
+
+  double sqrt(double a, double x, double epsilon)
+  
+Do not use the built-in C++ sqrt function. The answers will differ.
+
