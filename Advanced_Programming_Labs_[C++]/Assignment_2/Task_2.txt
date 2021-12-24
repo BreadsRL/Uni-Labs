@@ -1,0 +1,62 @@
+In this lab we will be writing simple C++ programs that make use of what we have learnt so far, which is to say, all the programs will follow the following structure:
+
+  ask user to input some data
+  store data in appropriate variables
+  perform the necessary calculations
+  output the result
+  
+Create a folder named assignment_2 in your home directory and make write all your C++ source files in there. Each exercise below will specify the exact filename to use so make sure you create that file in assignment_2 and edit it there using the STEAMplug text editor.
+
+1. Personalized Hello World
+
+Create a file called greeting.cpp. Ask the user to enter their name, with the following prompt: "Enter your name: " and do not print a blank line after it.
+
+2. Age in seconds
+
+In this exercise we are simply converting years to seconds. Create a file named ages.cpp. First prompt the user to provide their age, with the prompt "Enter your age: ", which you then save as an integer. The ages we enter in this program are specified in years and are limited to whole numbers (integers) only.
+
+Next, convert the number of years the user entered into seconds and display it.
+
+3. Age on Mars
+
+We know that the Earth takes 365.25 days to complete a full orbit around the Sun, which is 31557600 seconds. Mars takes a little bit longer than that, so if we are on Mars, and we adopt the same system as on Earth, where a year is taken to be the amount of time it takes the planet to orbit the Sun, then a year on Mars would be 59356800 seconds.
+
+Your task is to create a C++ program in a file called mars_age.cpp where users can calculate their Martian age.
+
+First prompt the user to enter their Earth age in years, with the following prompt: "Enter your age: ". This can be stored as an integer as we will expect users to provide their age as a whole number of years.
+
+Calculate their Martian age and display it for them in a message.
+
+4. Simple loans
+
+Complete this exercise in a file called simple_loan.cpp. Think of this as a loan between friends, which means no interest is calculated. Your program should just ask the user to enter the loan amount, and the loan period, which is the number of months in which the loan needs to be repaid. Then simply display the monthly amount owed.
+
+5. Calculating mortgage repayments
+
+Unlike loans between friends, when banks lend money to people who want to buy a home, the bank charges interest, and not just simple interest but compound interest. In this exercise we will create a file called mortgage.cpp and build a simple mortgage calculator.
+
+We will collect the following data from the user:
+
+  The loan amount
+  The loan period in months
+  The annual interest rate as a percentage
+  
+We will then display the fixed monthly repayment amount, rounded off to two decimal places.
+
+6. Startup runways
+
+Startup culture is very popular amongst Computer Scientists as a large percentage of the biggest companies in the world were once startups founded by Computer Scientists.
+
+There are currently many funding opportunities for tech startups and we encourage those of you who are interested to pursue them, which involves talking to VCs (venture capitalists) and other investors.
+
+A common question for startup founders is about their startup runway, which is basically the number of months before the company goes broke.
+
+A startup runway of 18 months is considered healthy, meaning the company can operate for 18 months with the money they currently have, which gives them enough time to develop their product and start being profitable. On the other hand, if your startup runway is only 3 months, then not many people are likely to invest in your company.
+
+To calculate the startup runway of your company, you need to know how much money you currently have in the bank. You also need to know your gross burn rate and your net burn rate.
+
+The startup runway can then be calculated as the amount of money we have now divided by the net burn rate.
+
+Create a C++ program called business.cpp, which will ask the user to enter their current bank balance, their projected monthly operational expenses, and their projected monthly income from operations.
+
+You should then display the company's gross burn rate, the net burn rate, and the projected runway in months.
