@@ -1,0 +1,25 @@
+Create a folder names assignment_1 in your home folder. You may create this folder with the command line or with the visual user interface on the file tree in the left sidebar.
+
+If you haven't done so already, open a terminal and navigate to your newly created assignment_1 folder. Ensure that you are indeed in the assignment_1 folder and complete the following tasks:
+
+    Use the command line to create a subfolder called assets inside your assignment_1 folder;
+    
+    Use the command line to create a subfolder called party inside your assignment_1 folder;
+    
+    Inside your assets folder, use the command line to create two new text files. They should be named paintings.txt and furniture.txt;
+    
+    Inside your party folder, use the command line to create two new text files. They should be named guestlist.txt and catering.txt;
+    
+    In your assignment_1 folder, use the appropriate terminal command to list the contents of the folder. Redirect the output of that command to a file called overall.txt. That is     to say that a file called overall.txt should appear in your assignment_1 folder and its contents should be the result of the "list" command executed on the assignment_1           folder;
+    
+    From your assignment_1 folder, use the appropriate terminal command to list the contents of the assets folder. Redirect the output of that command to a file called assets.txt;
+    
+    From your assignment_1 folder, use the appropriate terminal command to list the contents of the party folder. Redirect the output of that command to a file called party.txt;
+    
+    Now use the appropriate terminal command to move the file guestlist.txt from the party folder to the assets folder;
+    
+    In addition, use the appropriate terminal command to move the file paintings.txt from the assets folder to the party folder;
+    
+    From your assignment_1 folder, use the appropriate terminal command to list the contents of the assets folder again. This time redirect the output of that command to a file       called assets_after.txt;
+    
+    From your assignment_1 folder, use the appropriate terminal command to list the contents of the party folder again. This time redirect the output of that command to a file         called party_after.txt;
