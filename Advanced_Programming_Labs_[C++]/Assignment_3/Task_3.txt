@@ -1,0 +1,76 @@
+Create a folder called assignment_3 in your home directory. All work for this lab assignment should be completed inside this folder.
+
+Create a file called assignment_3.h which is where you will be asked to define some functions. You may also create a driver program that calls your functions for live testing purposes.
+
+Create the following functions in your assignment_3.h file:
+
+1. Wage calculator
+
+Define a function with the following signature:
+
+  float wages(int hours, float rate)
+
+which calculates the wages owed to an employee who has worked a given number of hours and is paid at a given rate. According to policy, the company pays 1.5x the rate for every hour above 40 that the employee worked.
+
+2. Blood donation compatibility
+
+Define a function with the following signature:
+
+  bool canDonateBlood(std::string donor, std::string recipient)
+  
+Given a donor's blood type, and a recipient's blood type, your function should return true if the donation is safe, and false otherwise. Use the following information to determine whether a blood donation is safe.
+
+There are 4 blood types, namely "A", "B", "AB", and "O". Only the strings "A", "B", "AB", and "O" are valid inputs for the function.
+
+  People with blood type "A" can donate to people with "A" or "AB";
+
+  People with blood type "B" can donate to people with "B" or "AB";
+
+  People with blood type "AB" can only donate to people with "AB";
+
+  People with blood type "O" can donate to anyone.
+  
+3. Leap years
+
+Define a function with the following signature:
+
+  bool leap(int year)
+  
+which returns true if the given year is leap, and false otherwise.
+
+Use the following rules to determine whether a year is leap.
+  For a year to be leap, it must be divisible by 4 but it should not be divisible by 100, unless it is also divisible by 400.
+  
+4. Number of days in a month
+
+Define a function with the following signature:
+
+  int daysInMonth(int month, int year)
+  
+Given a month (1-12) and a year, your function should return the number of days in that month. Pay attention to the fact February has a different number of days depending on whether or not it is a leap year.
+
+5. Point in rectangle
+
+Define a function with the following signature:
+  
+  bool pointInRect(float x, float y, float rx, float ry, float rw, float rh)
+
+In the function above the first two parameters x and y represent the coordinates of the point being tested. The next 4 parameters denote a rectangle, where rx and ry represent the coordinates if the top-left corner of the rectangle. The variable rw is the width of the rectangle, and rh is the height.
+
+Your function should return true if the point represented by x and y falls inside (including on the edges) of the rectangle represented by rx, ry, rw, and rh. Conversely your function should return false if the point is not inside the rectangle.
+
+6. Rectangle in rectangle
+
+Define a function with the following signature:
+
+  rectInRect(float x1, float y1, float w1, float h1, float x2, float y2, float w2, float h2)
+
+that takes in two rectangles. The first one rectangle 1 is represented by x1, y1, w1, h1, where x1 and y1 are the coordinates of the top-left corner of the rectangle, and w1 is its width and h1 is its height. The second rectangle rectangle 2 is represented in a similar manner with the last 4 parameters. Your function should return true if rectagle 1 is inside rectangle 2. The edges of the inner rectangle are allowed to touch the edges of the outer one, and it is still considered as being inside.
+
+7. Overlapping rectangles
+
+Similarly to question 6 above, we will define a function that takes two rectangles. Use the following signature:
+
+  overlap(float x1, float y1, float w1, float h1, float x2, float y2, float w2, float h2)
+
+This time however the function should return true if there are any overlaps between the two rectangles. Even if the outer edges of the rectangles are just touching, that is still considered overlap.
