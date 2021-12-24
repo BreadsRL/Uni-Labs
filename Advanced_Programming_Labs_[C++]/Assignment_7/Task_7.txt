@@ -1,0 +1,22 @@
+In this assignment we will be adding onto the collection of data structures we built in lecture 17. As a reminder, we built structs for Dist, Player, and Team. The Player type has a string name and a Dist height. The Team type is just a container for Player objects. It also happens to be a dynamically allocated container.
+
+Create a remove function for the Team container. It should have the following signature:
+
+  void Team::remove(Player p);
+  
+and it should remove the specified player from the list. It should also shrink the storage if the removal results in the capacity being less than half occupied.
+
+Create a getRandom function for the Team container. It should have the signature:
+
+  Player Team::getRandom();
+
+and it should return a copy of a randomly selected player.
+
+We also wish to store players' birthdays, so create a new data type called Date. It should store a year, month, and day. It should have all necessary constructors, and it should be overloading the << operator so we can cout it. It should be printed in the format YYYY-MM-DD.
+We should be able to subtract 2 Date objects with the - operator and the result should be a Duration object.
+
+Create a Duration object that stores the number of years and the number of days. It should have all the necessary constructors and it we should be able to cout it in the form X years, Y days.
+
+In the Team struct, create an averageAge function that takes in todays date and returns the average age of the Players in the Team. It should have the following signature:
+
+  Duration Team::averageAge(const Date& today);
