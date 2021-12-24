@@ -1,0 +1,2 @@
+furniture.txt
+paintings.txt
