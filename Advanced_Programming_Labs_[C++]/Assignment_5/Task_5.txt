@@ -1,0 +1,23 @@
+Create a folder called assignment_5 and inside it, create a file called lab5.h, which is where you will complete the following exercises. You may copy paste the file from the end of these instructions so you get all the correct function signatures.
+
+1.Counting Vowels
+Create a function that takes in a string and returns the number of vowels (A, E, I, O, U) that appear in the string. The string can be made up of any ASCII characters. Your function should not be case-sensitive.
+
+2.String Stability
+Write a function that returns True if a given string is stable and False otherwise. String stability is defined as follows:
+
+A string is said to be stable, if it can be split into two halves, where each half contains the same number of vowels. If the string is of an odd length, then the character in the middle is ignored when bisecting the string.
+
+3.Detecting Double Letters in Words
+Write a function that will take any string and check whether it has double letters, meaning the same letter appearing in more than one consecutive position.
+
+4.Interleaving Words
+Write a function that will take in two strings and interleave their characters starting with the first parameter, continuing to alternate between the two strings, until one of them has run out.
+
+5.Longest Common Prefix
+Write a function that takes in two strings and returns their longest common prefix.
+
+6.CatCourses Spreadsheets
+A somewhat annoying feature of CatCourses is that when one requests a report of some student data (for example grades), the system produces a spreadsheet where the full name of the individual appears as one string. We would like to extract just the last name from this string. Also recall that UC Merced emails addresses are constructed by taking the first letter of the user's first name, and concatenating that to the user's last name. Sometimes there are numbers appended at the end to ensure uniqueness. For example, the user Joe Soap would be given the email jsoap@ucmerced.edu.
+
+Your task is to write a function that takes in full name as a string, and an email address as a string, and returns just the last name from the full name it received.
